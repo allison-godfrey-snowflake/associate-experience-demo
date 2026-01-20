@@ -174,11 +174,3 @@ Update these values in the SQL scripts:
 - File paths in PUT commands
 
 ---
-
-## 📞 Support
-
-For questions about this demo, contact the Snowflake team.
-
----
-
-*Built for Capital One Associate Experience Team - January 2024*
