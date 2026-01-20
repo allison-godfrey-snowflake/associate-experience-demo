@@ -1,0 +1,587 @@
+ARTICLE_ID,TITLE,CATEGORY,APPLICATION,ARTICLE_TYPE,CREATED_DATE,LAST_UPDATED,VIEW_COUNT,HELPFUL_VOTES,LINKED_TICKET_COUNT,CONTENT,KEYWORDS
+KB-2024-001,Troubleshooting Workday Expense Report Timeouts,Software,Workday,TROUBLESHOOTING,2023-06-15,2024-01-15,4521,342,156,"# Troubleshooting Workday Expense Report Timeouts
+
+If you're experiencing timeouts or slow performance when submitting expense reports in Workday, follow these troubleshooting steps:
+
+## Common Causes
+- Large number of attachments (more than 10 receipts)
+- High-resolution images that exceed recommended file sizes
+- Peak usage times (Monday mornings, month-end deadlines)
+- Browser cache issues
+
+## Step-by-Step Resolution
+
+### 1. Reduce Attachment Size
+- Compress images before uploading
+- Each receipt should be under 2MB
+- Use your phone's document scanner feature for better compression
+- Convert HEIC images to JPEG format
+
+### 2. Batch Your Submissions
+If you have more than 10 receipts:
+- Split them across multiple expense reports
+- Submit 5-7 receipts per report
+- Wait for confirmation before starting the next batch
+
+### 3. Avoid Peak Hours
+- Monday mornings (8-10 AM EST) see highest traffic
+- Month-end deadlines (13th-15th of each month) have 40% higher volume
+- Best times to submit: Before 8 AM, after 2 PM, or Tuesday-Thursday
+
+### 4. Clear Browser Cache
+- Chrome: Settings > Privacy > Clear browsing data
+- Edge: Settings > Privacy > Clear browsing data
+- Select 'Cached images and files'
+
+### 5. Check System Status
+Visit the IT Status page (ServiceNow > IT Status Dashboard) to check for known issues.
+
+## When to Contact Support
+If the problem persists after trying these steps:
+- Open a support ticket: Category 'Software' > Subcategory 'Workday' > Issue 'Expense Reports'
+- Include: Number of receipts, file sizes, error message screenshot
+- Priority: P2 for month-end deadline, P3 for routine submissions
+
+## Related Articles
+- KB-2024-003: iPhone Receipt Photo Best Practices
+- KB-2024-015: Understanding Expense Report Approval Workflow","expense timeout slow workday receipt upload attachment error performance"
+KB-2024-002,VPN Connection Troubleshooting Guide,Network,VPN,TROUBLESHOOTING,2023-04-20,2024-01-10,8934,567,289,"# VPN Connection Troubleshooting Guide
+
+This guide helps you resolve common VPN connection issues when working remotely.
+
+## Before You Start
+Ensure you have:
+- Active network connection (WiFi or Ethernet)
+- Latest VPN client installed
+- Valid corporate credentials
+
+## Common Error Messages and Solutions
+
+### Error: Certificate Validation Failed
+**Cause:** Expired or corrupted certificate cache
+
+**Solution:**
+1. Open VPN Client Settings
+2. Go to Connections > Advanced
+3. Click 'Clear Credential Cache'
+4. Restart the VPN client
+5. Reconnect and re-authenticate with your credentials
+
+### Error: Connection Refused
+**Cause:** Firewall blocking VPN ports
+
+**Solution:**
+1. If on public WiFi, try a different network
+2. If on home network, ensure ports 443 and 4500 are open
+3. Try the alternate VPN gateway: vpn2.internal.capitalone.com
+
+### Error: Authentication Failed
+**Cause:** Password expired or account locked
+
+**Solution:**
+1. Check if you can log into Okta directly
+2. If locked, contact IT Support for account unlock
+3. If password expired, reset via password.capitalone.com
+
+### Error: Connection Timeout
+**Cause:** Network instability or VPN server load
+
+**Solution:**
+1. Check your internet speed (minimum 10 Mbps recommended)
+2. Try connecting to a different VPN gateway
+3. Restart your router if on home WiFi
+
+## VPN Gateway Locations
+- Primary: vpn.internal.capitalone.com
+- Backup: vpn2.internal.capitalone.com
+- Mobile: vpn-mobile.internal.capitalone.com
+
+## Performance Tips
+- Close bandwidth-heavy applications before connecting
+- Use wired connection when possible
+- Position WiFi router for optimal signal
+
+## When to Contact Support
+If none of the above solutions work:
+- Support ticket: Category 'Network' > Subcategory 'VPN'
+- Include: Error message, time of attempt, your location
+- For complete inability to work: Priority P1","vpn connection remote work timeout certificate authentication network"
+KB-2024-003,iPhone Receipt Photo Best Practices for Expense Reports,Software,Concur,HOW_TO,2023-08-10,2024-01-10,3456,234,98,"# iPhone Receipt Photo Best Practices for Expense Reports
+
+Follow these guidelines to ensure your iPhone receipt photos upload successfully to Concur and Workday.
+
+## The HEIC Issue
+By default, iPhones capture photos in HEIC format, which some expense systems have trouble processing. Here's how to fix it:
+
+### Option 1: Change iPhone Camera Settings (Recommended)
+1. Open Settings > Camera > Formats
+2. Select 'Most Compatible' instead of 'High Efficiency'
+3. This captures photos as JPEG which is universally supported
+
+### Option 2: Use the Notes App Document Scanner
+The Notes app has a built-in scanner that:
+- Automatically enhances contrast (great for faded receipts!)
+- Saves as PDF or JPEG
+- Crops to receipt edges automatically
+
+**How to use:**
+1. Open Notes app > Create new note
+2. Tap camera icon > Scan Documents
+3. Position receipt and let it auto-capture
+4. Tap Save > Share > Save to Photos
+
+### Option 3: Convert Existing HEIC Photos
+If you already have HEIC photos:
+1. Email the photo to yourself
+2. iPhone automatically converts to JPEG when emailing
+3. Save the JPEG from email to upload
+
+## Photo Quality Tips
+- **Lighting:** Photograph receipts in good lighting, avoid shadows
+- **Angle:** Capture straight-on, not at an angle
+- **Focus:** Tap the receipt to focus before capturing
+- **Size:** Keep photos under 2MB for fastest upload
+
+## Faded Receipt Solutions
+For thermal paper receipts that fade quickly:
+1. Scan immediately after receiving
+2. Use Notes app scanner - it enhances contrast
+3. If already faded, increase exposure in Photos app before uploading
+
+## File Size Guidelines
+- Target: Under 2MB per image
+- Maximum: 10MB (but may cause timeouts)
+- Batch submission limit: 5-7 images recommended
+
+## Related Articles
+- KB-2024-001: Troubleshooting Workday Expense Report Timeouts
+- KB-2024-022: Concur Mobile App Quick Start Guide","iphone heic receipt photo camera expense upload image convert jpeg"
+KB-2024-004,Microsoft Teams Performance Optimization,Software,Microsoft Teams,HOW_TO,2023-05-15,2024-01-12,6234,412,134,"# Microsoft Teams Performance Optimization
+
+Optimize your Teams experience for smooth video calls and screen sharing.
+
+## System Requirements
+**Minimum:**
+- 4GB RAM
+- Dual-core processor
+- 3 Mbps internet
+
+**Recommended for Large Meetings:**
+- 16GB RAM
+- Quad-core processor
+- 10+ Mbps internet
+
+**Your Laptop:** Check specs in Settings > System > About
+
+## Before Important Meetings
+
+### Close Unnecessary Applications
+Teams with video uses significant resources. Before large meetings:
+1. Close Chrome tabs (each tab uses memory)
+2. Quit Slack if not needed
+3. Close large Excel files
+4. Exit any video streaming
+
+### Check Your Setup
+1. Test audio/video: Teams > Settings > Devices > Make a test call
+2. Ensure good lighting for video
+3. Use headphones to prevent echo
+4. Connect to power (performance may be throttled on battery)
+
+## During Screen Sharing
+
+### Optimize for Performance
+1. Share specific window instead of entire screen
+2. Close confidential apps before sharing
+3. Use 'Include system audio' only when needed
+4. Disable 'Include video' if not necessary
+
+### For Large Meetings (50+ Participants)
+1. Consider disabling incoming video: '...' > Turn off incoming video
+2. Use 'Together Mode' or 'Gallery' instead of 'Large Gallery'
+3. Presenters should use wired internet connection
+
+## Troubleshooting Crashes
+
+### Teams Crashes During Video/Screen Share
+Common cause: Insufficient RAM or GPU driver issues
+
+**Solutions:**
+1. Restart Teams: Right-click system tray icon > Quit > Reopen
+2. Clear Teams cache: %appdata%\\Microsoft\\Teams\\Cache (delete contents)
+3. Update display drivers: Device Manager > Display adapters > Update driver
+4. Disable GPU acceleration: Settings > General > Disable GPU hardware acceleration
+
+### Laptop Overheating
+**Solutions:**
+1. Use a laptop stand for better airflow
+2. Reduce video quality: Settings > General > Low bandwidth mode
+3. Use external webcam (less CPU than built-in)
+4. Clean laptop vents with compressed air
+
+## Hardware Refresh
+If Teams regularly underperforms:
+- Laptops older than 4 years may need refresh
+- Request upgrade via IT Procurement portal
+- Include performance issues in justification
+
+## Related Articles
+- KB-2024-010: Scheduling and Managing Large Meetings
+- KB-2024-011: Teams Screen Sharing Best Practices","teams video call performance slow crash screen share meeting memory ram"
+KB-2024-005,MFA and Authentication Troubleshooting,Access,Okta,TROUBLESHOOTING,2023-03-20,2024-01-08,7823,534,312,"# MFA and Authentication Troubleshooting
+
+Resolve common Multi-Factor Authentication (MFA) and login issues.
+
+## Understanding MFA Options
+You have three MFA methods available:
+1. **Okta Verify Push** - Notification to your phone (fastest)
+2. **SMS Code** - Text message with 6-digit code
+3. **TOTP Code** - Time-based code from Okta Verify app (works offline)
+
+## Common Issues and Solutions
+
+### Missed Push Notification
+**Symptom:** Login timed out because you didn't receive or respond to push
+
+**Solutions:**
+1. Check phone isn't on silent/Do Not Disturb
+2. Check Okta Verify app notifications are enabled
+3. Try again - push notifications sometimes delay
+
+**Prevent Future Issues:**
+- Set up backup SMS or TOTP in Okta settings
+
+### Phone Lost or Replaced
+**Symptom:** Can't receive MFA because you have a new phone
+
+**Solution:**
+1. Visit helpdesk.capitalone.com from any device
+2. Click 'MFA Recovery'
+3. Complete identity verification (security questions + manager approval)
+4. Temporary access code provided within 2 hours
+5. Re-enroll MFA on new device
+
+### Account Locked After Failed Attempts
+**Symptom:** 'Account locked' message after multiple wrong passwords
+
+**Solution:**
+1. Wait 15 minutes for automatic unlock, OR
+2. Contact IT Support for immediate unlock
+3. Have your manager confirm your identity
+4. Reset password at password.capitalone.com
+
+### MFA Not Working Abroad
+**Symptom:** No push notifications or SMS while traveling
+
+**Solution:**
+1. Use TOTP codes (work offline)
+2. Open Okta Verify > Click account > Get code
+3. Enter 6-digit code within 30 seconds
+
+**Before Travel:**
+- Notify IT Support of travel dates
+- Confirm TOTP is set up and working
+
+## Setting Up Backup Authentication
+
+### Add Backup Phone Number
+1. Log into okta.capitalone.com
+2. Go to Settings > Edit Profile
+3. Add secondary phone number for SMS backup
+
+### Enable TOTP Codes
+1. Open Okta Verify app
+2. Tap your Capital One account
+3. Codes display automatically - refresh every 30 seconds
+
+## Related Articles
+- KB-2024-020: Password Reset and Requirements
+- KB-2024-021: Okta Verify Setup Guide","mfa authentication login password locked push notification okta verify sms"
+KB-2024-006,Outlook Mailbox Management and Performance,Software,Outlook,HOW_TO,2023-07-25,2024-01-11,5432,356,187,"# Outlook Mailbox Management and Performance
+
+Keep your Outlook running smoothly by managing mailbox size and optimizing performance.
+
+## Mailbox Size Guidelines
+- **Recommended maximum:** 25GB
+- **Warning threshold:** 35GB (you'll see performance impact)
+- **Hard limit:** 50GB (new mail may be blocked)
+
+**Check your size:** File > Info > Mailbox Settings > Manage Mailbox Size
+
+## Reducing Mailbox Size
+
+### Enable Auto-Archive (Recommended)
+Auto-archive moves old emails to local storage, keeping mailbox lean:
+1. File > Options > Advanced > AutoArchive Settings
+2. Enable 'Run AutoArchive every 14 days'
+3. Set 'Clean out items older than 6 months'
+4. Choose archive location
+
+### Delete Large Attachments
+Attachments consume the most space:
+1. Create search folder: View > Folder Pane > New Search Folder > Large Mail
+2. Review and delete unnecessary large emails
+3. For needed attachments, save to OneDrive and delete email
+
+### Empty Deleted Items
+Deleted emails still count toward quota:
+1. Right-click Deleted Items folder
+2. Select 'Empty Folder'
+3. Enable auto-empty: File > Options > Advanced > 'Empty Deleted Items when exiting'
+
+## Performance Optimization
+
+### Search Running Slow
+**Cause:** Large mailbox with outdated index
+
+**Solution:**
+1. File > Options > Search > Indexing Options
+2. Click 'Modify' > Ensure Outlook is checked
+3. Click 'Advanced' > 'Rebuild' to refresh index
+4. Allow 2-3 hours for rebuild to complete
+
+### Outlook Crashes or Freezes
+**Solutions:**
+1. Start in Safe Mode: Hold Ctrl while clicking Outlook
+2. Disable add-ins: File > Options > Add-ins > Manage COM Add-ins > Uncheck non-essential
+3. Repair Office: Control Panel > Programs > Microsoft 365 > Repair
+
+### Calendar Sync Issues
+If calendar shows duplicates or sync errors:
+1. Close Outlook completely
+2. Clear offline cache: Navigate to %localappdata%\\Microsoft\\Outlook
+3. Delete .ost file (will rebuild on next launch)
+4. Reopen Outlook and wait for sync
+
+## Related Articles
+- KB-2024-007: Outlook Mobile App Setup
+- KB-2024-008: Calendar Sharing Best Practices","outlook slow performance mailbox size archive search crash calendar sync"
+KB-2024-007,ServiceNow Ticket Submission Best Practices,Software,ServiceNow,HOW_TO,2023-09-10,2024-01-05,4123,287,92,"# ServiceNow Ticket Submission Best Practices
+
+Get faster resolution by submitting well-structured support tickets.
+
+## Choosing the Right Category
+Proper categorization routes your ticket to the right team:
+
+| Issue Type | Category | Subcategory |
+|------------|----------|-------------|
+| Can't access an application | Access | [Application Name] |
+| Application error or bug | Software | [Application Name] |
+| Slow performance | Software | Performance |
+| Need new software | Request | Software Install |
+| Hardware issue | Hardware | [Laptop/Monitor/etc.] |
+| Network/WiFi issue | Network | Connectivity |
+| VPN issue | Network | VPN |
+
+## Priority Guidelines
+- **P1 - Critical:** Complete work stoppage for multiple people
+- **P2 - High:** Major impact, workaround difficult or unavailable
+- **P3 - Medium:** Moderate impact, workaround available
+- **P4 - Low:** Minor issue, minimal business impact
+
+⚠️ Over-prioritization may result in reclassification and delays
+
+## Writing Effective Descriptions
+
+### Include These Elements:
+1. **What happened:** Exact error message or behavior
+2. **When:** Date and time of occurrence
+3. **Frequency:** First time, intermittent, or constant
+4. **Steps to reproduce:** What were you doing when it happened
+5. **Impact:** How this affects your work
+6. **Attempted solutions:** What you've already tried
+
+### Example of a Good Description:
+'Starting at 9 AM today (1/15), I've been unable to submit expense reports in Workday. When I click Submit, it spins for about 5 minutes then shows 'Timeout Error'. I have 12 receipts attached. I've tried clearing my browser cache and reducing to 5 receipts but still fails. Month-end deadline is today so this is urgent.'
+
+### Example of a Poor Description:
+'Workday broken.'
+
+## Attaching Evidence
+Always include:
+- Screenshots of error messages
+- Relevant log files if available
+- Steps to reproduce in writing
+
+## Tracking Your Ticket
+1. Note your ticket number (TKT-XXXX-XXXXX)
+2. Check status via ServiceNow > My Tickets
+3. Respond promptly to agent questions
+4. Mark as resolved when fixed
+
+## Related Articles
+- KB-2024-012: How to Take Effective Screenshots
+- KB-2024-013: Escalation Procedures","ticket support servicenow help desk priority category description issue report"
+KB-2024-008,SharePoint and OneDrive Large File Uploads,Software,SharePoint,HOW_TO,2023-10-05,2024-01-13,2876,198,67,"# SharePoint and OneDrive Large File Uploads
+
+Best practices for uploading large files without timeouts.
+
+## File Size Limits
+- **Browser upload limit:** 100MB recommended during peak hours
+- **OneDrive sync limit:** 250GB per file
+- **Maximum file size:** 250GB
+
+## Method Comparison
+
+| Method | Best For | Max Size | Speed |
+|--------|----------|----------|-------|
+| Browser drag & drop | Small files (<50MB) | 100MB | Slow |
+| OneDrive sync | Large files, folders | 250GB | Fast |
+| Teams upload | Team documents | 250GB | Medium |
+
+## Using OneDrive Sync (Recommended for Large Files)
+
+### Setup
+1. Open SharePoint library in browser
+2. Click 'Sync' button in toolbar
+3. OneDrive opens and creates synced folder on your PC
+4. Green checkmark = synced
+
+### Uploading
+1. Simply copy/paste or drag files into the synced folder
+2. Files upload in background
+3. Blue arrows = uploading, Green check = complete
+
+## Troubleshooting Upload Failures
+
+### Timeout Errors in Browser
+**Cause:** Network interruption or peak usage
+
+**Solutions:**
+1. Switch to OneDrive sync instead
+2. Try off-peak hours (before 8 AM or after 6 PM)
+3. For video files, use Microsoft Stream instead
+
+### Sync Stuck or Slow
+**Solutions:**
+1. Right-click OneDrive icon in system tray
+2. Click 'Pause syncing' for 2 hours, then 'Resume'
+3. If persistent, Help & Settings > Quit OneDrive, then restart
+
+### File Names Not Syncing
+Some characters aren't supported:
+- Avoid: \" * : < > ? / \\ |
+- Avoid leading/trailing spaces
+- Keep path length under 400 characters
+
+## Video Content: Use Stream
+For video files (training, recordings):
+1. Microsoft Stream is optimized for video
+2. Better playback experience
+3. Auto-generated captions
+4. View analytics
+
+Go to: stream.microsoft.com
+
+## Related Articles
+- KB-2024-009: Microsoft Stream Quick Start
+- KB-2024-014: SharePoint Document Library Organization","sharepoint onedrive upload large file sync timeout video stream document"
+KB-2024-009,Password Reset and Security Best Practices,Access,Password Management,HOW_TO,2023-02-15,2024-01-09,9234,623,345,"# Password Reset and Security Best Practices
+
+Everything you need to know about passwords at Capital One.
+
+## Password Requirements
+Your password must:
+- Be at least 12 characters
+- Include uppercase and lowercase letters
+- Include at least one number
+- Include at least one special character (!@#$%^&*)
+- Not be any of your last 12 passwords
+- Not contain your name or username
+
+## Resetting Your Password
+
+### If You Know Your Current Password
+1. Go to password.capitalone.com
+2. Click 'Change Password'
+3. Enter current password, then new password twice
+4. Click Submit
+
+### If You Forgot Your Password
+1. Go to password.capitalone.com
+2. Click 'Forgot Password'
+3. Enter your username/email
+4. Complete identity verification (security questions)
+5. Check email for reset link
+
+### If Account Is Locked
+After 5 failed attempts:
+1. Wait 15 minutes for automatic unlock, OR
+2. Call IT Support at x4HELP (x44357)
+3. Have your employee ID ready
+
+## Password Expiration
+- Passwords expire every 90 days
+- You'll receive warnings at 14, 7, and 3 days before expiration
+- Expired passwords must be reset before you can log in
+
+## Password Manager
+We recommend using the company-approved password manager:
+1. Request installation via IT Request Portal
+2. It securely stores unique passwords for each app
+3. Auto-fills login forms
+4. Generates strong passwords
+
+## Security Tips
+- Never share your password with anyone
+- Never write passwords down
+- Use different passwords for work and personal accounts
+- Report suspicious login attempts to Security team
+
+## Related Articles
+- KB-2024-005: MFA and Authentication Troubleshooting
+- KB-2024-021: Okta Verify Setup Guide","password reset forgot locked expired security change requirements account"
+KB-2024-010,Power BI Dashboard Troubleshooting,Software,Power BI,TROUBLESHOOTING,2023-11-20,2024-01-16,1987,134,45,"# Power BI Dashboard Troubleshooting
+
+Resolve common issues with Power BI dashboards and reports.
+
+## Common Issues
+
+### Dashboard Shows Stale Data
+**Symptom:** Report shows 'Last refreshed: [old date]'
+
+**Causes:**
+- Scheduled refresh failed
+- Data source connection issue
+- Insufficient permissions
+
+**Solutions:**
+1. Check if it's a known outage: IT Status Dashboard
+2. Contact the dashboard owner (listed in report description)
+3. For urgent business needs, IT can trigger manual refresh
+
+### Permission Denied Error
+**Symptom:** 'You don't have permission to view this report'
+
+**Solutions:**
+1. Request access from dashboard owner
+2. Check if you're in the right security group
+3. Submit access request via ServiceNow
+
+### Dashboard Loading Slowly
+**Causes:**
+- Large dataset
+- Complex visualizations
+- Network issues
+
+**Solutions:**
+1. Clear browser cache
+2. Try a different browser (Edge recommended)
+3. Check internet speed
+4. Ask dashboard owner about optimization
+
+### Data Looks Wrong
+**Before reporting a bug:**
+1. Verify date range filters are correct
+2. Check if filters are applied (look for filter icons)
+3. Compare with source data if possible
+4. Note specific discrepancy for report
+
+## Requesting Dashboard Changes
+1. Document the change needed
+2. Submit via ServiceNow > Request > 'Analytics/BI Request'
+3. Include: Dashboard name, URL, specific change, business justification
+
+## Related Articles
+- KB-2024-016: Accessing Power BI from Home
+- KB-2024-017: Power BI Mobile App Setup","power bi dashboard report refresh data stale permission slow analytics"

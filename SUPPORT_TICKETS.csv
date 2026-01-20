@@ -1,0 +1,134 @@
+TICKET_ID,CREATED_AT,RESOLVED_AT,ASSOCIATE_ID,CATEGORY,SUBCATEGORY,PRIORITY,STATUS,RESOLUTION_HOURS,REOPEN_COUNT,CSAT_SCORE,RELATED_EVENT_IDS,TICKET_DESCRIPTION,RESOLUTION_NOTES,CONVERSATION_TRANSCRIPT
+TKT-2024-45001,2024-01-15 08:52:00,2024-01-15 13:30:00,A-78234,Software,Workday,P2,Resolved,4.6,0,3,"[""EVT-2024-089001"",""EVT-2024-089007""]","I've been trying to submit my Q4 expense report all morning but it keeps timing out. I have about 12 receipts attached (mostly Uber rides and client dinners from December). Every time I click submit, it spins for several minutes then gives me a timeout error. I've tried twice now and wasted almost an hour. This is blocking my reimbursement before month-end close. Really frustrating because I need this money back ASAP.","Confirmed this is related to known incident INC-2024-0892 affecting Workday expense attachments. The attachment processing service was overwhelmed due to Monday morning peak + month-end volume. Advised associate to split submission into batches of 5 receipts maximum. First batch submitted successfully at 11:45. Remaining receipts submitted by 13:00. All expenses now processing normally. Permanent fix deployed at 12:30 increased processing capacity. Associate satisfied with workaround but frustrated by initial experience.","[08:52] Associate: Expense report keeps timing out. Tried twice. Very frustrated.
+[09:15] Agent: I see you're experiencing the timeout. Let me check system status.
+[09:18] Agent: We have a known issue affecting expense submissions with multiple attachments. Can you try submitting with fewer receipts?
+[09:25] Associate: How many should I try?
+[09:26] Agent: Please try 5 or fewer receipts per submission.
+[11:48] Associate: That worked! Submitting the rest now.
+[13:30] Agent: Glad to hear it. Closing ticket. Issue is now resolved system-wide."
+TKT-2024-45002,2024-01-15 08:55:00,2024-01-15 14:15:00,A-67234,Software,Workday,P1,Resolved,5.3,1,2,"[""EVT-2024-089004""]","URGENT - Cannot submit expenses and this is my FOURTH attempt this morning. I keep getting connection reset errors. I have a hard deadline for month-end close and my manager is asking where my report is. I'm a senior VP and I do not have time for this. Please escalate immediately. Every time I try to submit, the page loads for about 5 minutes then just dies. I have 18 receipts from a week-long client trip to NYC.","P1 escalation due to VP level and deadline pressure. Initially provided same workaround as other tickets (batch submission). Associate reopened ticket because first batch also failed. Escalated to Tier 3 who identified that this associate's submission was stuck in a corrupted queue state. Tier 3 manually cleared the queue entry and associate was able to submit successfully at 13:45. Root cause added to incident INC-2024-0892. Apology email sent by IT Director. CSAT low due to extended resolution time and reopen.","[08:55] Associate: FOURTH ATTEMPT. Connection reset. VP level. Escalate now.
+[09:02] Agent: Escalating to priority queue immediately. I understand the urgency.
+[09:15] Agent: We have a widespread issue. Try submitting 5 receipts at a time.
+[09:45] Associate: Still failing even with 5. This is unacceptable.
+[10:00] Agent: Escalating to Tier 3 engineering.
+[11:30] Tier 3: Found corrupted queue entry for this user. Clearing now.
+[13:45] Associate: Finally worked. Very disappointed in the experience.
+[14:15] Agent: I sincerely apologize. IT Director will follow up."
+TKT-2024-45003,2024-01-15 09:08:00,2024-01-15 10:30:00,A-89012,Software,Workday,P2,Resolved,1.4,0,4,"[""EVT-2024-089005""]","Got a 500 error when trying to submit my expense report. Screen just said something went wrong. I have 6 PDF receipts attached. Not sure what to do now - is my report lost? I spent 30 minutes filling it out.","Reassured associate that draft was auto-saved and not lost. Verified draft visible in their Workday account. Explained known issue and workaround. Associate successfully submitted using batch method. Quick resolution and associate appreciated the draft auto-save feature.","[09:08] Associate: Got 500 error. Is my report gone?
+[09:12] Agent: Don't worry - Workday auto-saves drafts. Let me verify.
+[09:15] Agent: I can see your draft is saved. We have a known issue - please try submitting 5 receipts at a time.
+[10:25] Associate: Worked! Thanks for the quick help and letting me know about the auto-save.
+[10:30] Agent: Happy to help. Closing ticket."
+TKT-2024-45004,2024-01-15 09:35:00,2024-01-15 11:20:00,A-91234,Software,Workday,P2,Resolved,1.75,0,4,"[""EVT-2024-089010""]","Trying to submit travel expenses from last week's client visit. Third attempt and it times out every time. I have about 10 receipts - hotel, flights, meals, uber. Any idea when this will be fixed?","Provided workaround for batch submission. Associate split into two batches of 5 and submitted successfully. Noted that associate was patient and understanding about the issue. Closed after confirming both submissions processed.","[09:35] Associate: Travel expenses timing out. Third try. 10 receipts total.
+[09:40] Agent: We're experiencing high volume issues. Can you try splitting into batches of 5?
+[09:55] Associate: Sure, I'll try that. Any ETA on a permanent fix?
+[09:58] Agent: Engineering is working on it. We expect resolution within 2-3 hours.
+[11:15] Associate: Both batches went through. Thanks!
+[11:20] Agent: Great to hear. Closing ticket."
+TKT-2024-45005,2024-01-15 09:50:00,2024-01-15 12:45:00,A-45123,Access,Authentication,P3,Resolved,2.9,0,5,"[""EVT-2024-089011""]","Couldn't log in this morning - my phone was on silent and I missed the MFA push. Had to wait for the timeout then try again. Is there a way to get a backup code or something for when this happens? I almost missed an important 9am meeting.","Provided information about MFA backup options. Walked associate through setting up backup phone number for SMS codes. Also showed how to use Okta Verify app's offline TOTP codes as backup. Associate appreciated learning about these options.","[09:50] Associate: Missed MFA push due to silent phone. Almost missed meeting. Any backup options?
+[10:05] Agent: Yes! You have several backup options. Would you like me to walk you through them?
+[10:08] Associate: Please!
+[10:15] Agent: You can add a backup phone for SMS, or use offline codes in Okta Verify.
+[12:40] Associate: Set up both options. Thanks for the thorough explanation!
+[12:45] Agent: Glad I could help. Closing ticket."
+TKT-2024-45006,2024-01-15 10:10:00,2024-01-15 14:30:00,A-12345,Software,Microsoft Teams,P2,Resolved,4.3,0,3,"[""EVT-2024-089013""]","Teams crashed in the middle of my presentation! I was sharing my screen with 45 people including our VP and external clients. Super embarrassing. The whole app just froze and then disappeared. Had to rejoin from my phone while my laptop restarted. This keeps happening when I screen share in large meetings. Is my laptop the problem or is it Teams?","Reviewed device diagnostics and Teams logs. Laptop is 3 years old with 8GB RAM - at minimum spec for Teams video + screen share. Large meetings with screen share are resource-intensive. Recommended laptop upgrade request through IT procurement. In meantime, suggested closing other applications before large meetings and using browser-based Teams as fallback. Associate submitted hardware refresh request.","[10:10] Associate: Teams crashed during presentation to 45 people including VP. Embarrassing!
+[10:25] Agent: I'm sorry that happened. Let me check your device specs and Teams logs.
+[10:45] Agent: Your laptop has 8GB RAM which is minimum spec. Large meetings with screen share need more resources.
+[11:00] Associate: So I need a new laptop?
+[11:05] Agent: I'd recommend requesting a hardware refresh. I can help you submit that request.
+[14:25] Associate: Request submitted. Thanks for the workaround tips too.
+[14:30] Agent: Good luck with the new laptop request!"
+TKT-2024-45007,2024-01-15 11:25:00,2024-01-16 09:15:00,A-23789,Network,VPN,P1,Resolved,21.8,0,4,"[""EVT-2024-089018""]","I cannot connect to VPN from home at all. Getting a certificate error. I've been trying all morning and I'm completely blocked from working. I was connected fine on Friday. Please help urgently - I have deliverables due today.","Certificate validation issue traced to recent security update pushed Friday evening. The update changed certificate chain validation. User's cached certificate needed refresh. Walked user through clearing credential cache and re-authenticating. Issue resolved. Flagged pattern to security team as multiple users affected. Broader communication sent to WFH associates about certificate refresh.","[11:25] Associate: VPN cert error. Completely blocked. Was working Friday!
+[11:35] Agent: I see several reports of this. A security update may have affected certificates.
+[11:45] Agent: Can you try: Settings > Clear VPN Credentials > Reconnect?
+[12:00] Associate: Trying now... It's asking me to re-authenticate.
+[12:05] Associate: I'm in! Thank you so much!
+[12:10] Agent: Great! We're tracking this issue. Will keep ticket open to monitor for 24 hours.
+[Next Day 09:15] Agent: No recurrence reported. Closing ticket."
+TKT-2024-45008,2024-01-15 11:35:00,2024-01-15 15:20:00,A-67123,Software,Concur,P3,Resolved,3.75,0,3,"[""EVT-2024-089019""]","My iPhone receipt photos aren't uploading to Concur. I get an error about the file format. These are just regular photos I took of receipts. Worked fine last month. Do I need to do something different now?","iPhone photos in HEIC format not being recognized after recent Concur update. HEIC conversion service experiencing issues. Workaround: change iPhone camera settings to capture in JPEG format (Settings > Camera > Formats > Most Compatible). Associate successfully uploaded receipts after changing setting. Issue logged with Concur vendor for permanent fix.","[11:35] Associate: iPhone receipt photos won't upload. File format error.
+[11:50] Agent: iPhones use HEIC format by default which Concur is having trouble with.
+[11:55] Agent: As a workaround, change your camera settings to JPEG. Settings > Camera > Formats > Most Compatible.
+[15:10] Associate: Changed settings and retook the photos. Working now!
+[15:20] Agent: Great! We've reported this to Concur for a permanent fix."
+TKT-2024-45009,2024-01-14 14:20:00,2024-01-14 16:45:00,A-12567,Network,Firewall,P2,Resolved,2.4,0,2,"[""EVT-2024-089029""]","I can't join Zoom calls! It worked yesterday but today nothing. I had to use my personal phone for an important client call which is NOT okay from a security perspective. I use Zoom because our client uses it, not by choice. What's going on?","Recent firewall rule update blocked certain Zoom connection ports. Change was intended to block unauthorized meeting apps but inadvertently affected approved Zoom client. Change rolled back within 2 hours. Associate frustrated about having to use personal device. Incident report filed for firewall change process review.","[14:20] Associate: Zoom blocked. Had to use personal phone. Not okay!
+[14:35] Agent: I'm checking with network security. We may have had a firewall change.
+[14:50] Security Team: Confirmed. We're rolling back the change now.
+[16:30] Agent: Zoom access should be restored. Can you try again?
+[16:40] Associate: Working now. Please make sure this doesn't happen again. Using personal devices for client calls is a compliance concern.
+[16:45] Agent: Completely understand. We've filed an incident report."
+TKT-2024-45010,2024-01-14 15:40:00,2024-01-15 10:00:00,A-78567,Software,Power BI,P3,Resolved,18.3,0,4,"[""EVT-2024-089030""]","The daily metrics dashboard I use every morning isn't showing today's data. It says last refresh was 2 days ago. My team relies on this for our standup. Can someone refresh it?","Automated Power BI refresh job failed due to source database connection timeout. Re-ran refresh manually - completed successfully. Investigated root cause: database server was under heavy load during scheduled refresh window. Recommended rescheduling refresh to off-peak hours (4 AM instead of 7 AM). Change implemented.","[15:40] Associate: Power BI dashboard not refreshing. Team needs it for standups.
+[15:55] Agent: Let me check the refresh job status.
+[16:10] Agent: The automated refresh failed. I'm triggering a manual refresh now.
+[16:30] Agent: Refresh running. Should complete in about 30 minutes.
+[Next Day 09:45] Agent: Dashboard is now up to date. We've rescheduled the refresh to avoid peak hours.
+[10:00] Associate: Confirmed working. Thanks!"
+TKT-2024-45011,2024-01-13 09:25:00,2024-01-13 11:30:00,A-34890,Software,SharePoint,P2,Resolved,2.1,0,3,"[""EVT-2024-089023""]","Trying to upload our quarterly presentation (45MB PowerPoint) to the department SharePoint. Keeps timing out. We have a deadline to have this up for executive review by noon. Is there a file size limit I don't know about?","Large file upload during peak hours exceeded timeout threshold. Suggested two options: 1) Use OneDrive sync client for large files, 2) Try upload during off-peak. Associate used OneDrive sync which completed in 5 minutes. Reminded about 100MB soft limit during peak hours.","[09:25] Associate: 45MB PowerPoint won't upload to SharePoint. Noon deadline!
+[09:35] Agent: Large uploads can be tricky during peak hours. Have you tried the OneDrive sync client?
+[09:40] Associate: No, how does that work?
+[09:45] Agent: Open the SharePoint library in OneDrive > Sync > Drop your file in the synced folder.
+[10:45] Associate: That worked! Way faster. Why isn't this the default?
+[11:30] Agent: Glad it worked! It's a good tip for large files. Closing ticket."
+TKT-2024-45012,2024-01-13 10:45:00,2024-01-13 14:00:00,A-56234,Software,Excel,P3,Resolved,3.25,0,4,"[""EVT-2024-089024""]","Excel keeps crashing when I work with my data analysis file. It's got about 500,000 rows and a bunch of pivot tables. I need this for my quarterly analysis and it's become unusable. Worked fine until I added the latest data extract.","Workbook exceeds Excel memory limits on standard laptop. Options discussed: 1) Enable Power Pivot for data model (more efficient memory use), 2) Split data across multiple workbooks, 3) Request power user laptop with 32GB RAM. Associate chose to learn Power Pivot approach. Provided training resources and brief walkthrough. File now opens without crashing.","[10:45] Associate: Excel crashing with large data file. 500K rows, lots of pivot tables.
+[11:00] Agent: That's a lot of data! Your laptop's RAM is likely the bottleneck.
+[11:15] Agent: Have you considered using Power Pivot? It's more memory-efficient for large datasets.
+[11:30] Associate: I've heard of it but never used it.
+[11:45] Agent: I can walk you through converting your file. Would that help?
+[13:45] Associate: Wow, this is so much faster! Thanks for the tutorial.
+[14:00] Agent: Happy to help! There's more training on the Learning Portal."
+TKT-2024-45013,2024-01-11 09:00:00,2024-01-11 12:30:00,A-67456,Software,Outlook,P2,Resolved,3.5,0,3,"[""EVT-2024-089035""]","Outlook crashed and now it keeps crashing whenever I try to search for old emails. I have a lot of email (probably years worth) and I need to find something from a client conversation in 2022. Help!","Mailbox at 45GB significantly exceeds 25GB recommended limit. Search indexing corrupted during crash. Rebuilt search index (took 2 hours). Discussed mailbox management: archiving policy, PST export for old emails. Associate agreed to archive emails older than 1 year. Mailbox reduced to 12GB.","[09:00] Associate: Outlook crashing when searching. Need old 2022 emails.
+[09:20] Agent: Your mailbox is quite large at 45GB. This can cause issues.
+[09:25] Agent: I'm going to rebuild your search index. This may take a couple hours.
+[09:30] Associate: Will I be able to use Outlook during this?
+[09:32] Agent: Yes, but search may be slow or incomplete until it finishes.
+[11:45] Agent: Indexing complete. Can you try your search now?
+[12:00] Associate: Found the email! Should I do something about the mailbox size?
+[12:30] Agent: I'd recommend archiving older emails. I've set up auto-archive for you."
+TKT-2024-45014,2024-01-08 09:45:00,2024-01-08 14:00:00,A-34234,Network,VPN,P1,Resolved,4.25,0,2,"[""EVT-2024-089039""]","CANNOT WORK AT ALL. VPN says certificate expired. I'm remote today and have no way to access anything. My manager is already asking where I am. Please help immediately!","Client certificate expired. Certificate renewal required Security team involvement. Expedited certificate renewal process which normally takes 24 hours. Remote emergency procedure used to issue temporary certificate within 2 hours. Permanent certificate issued by end of day. Associate was completely blocked for 2 hours which impacted CSAT.","[09:45] Associate: Certificate expired. Completely blocked. Manager asking where I am!
+[09:50] Agent: I'm escalating to security team for emergency certificate renewal.
+[10:00] Security: Certificate expired last night. Normal renewal is 24 hours.
+[10:05] Agent: We're requesting emergency expedited process.
+[11:30] Security: Temporary certificate issued. Please reconnect.
+[11:45] Associate: I'm in. But I lost 2 hours of work time.
+[14:00] Agent: Permanent certificate ready. Very sorry for the delay."
+TKT-2024-45015,2024-01-08 11:45:00,2024-01-08 15:30:00,A-89567,Software,Concur,P3,Resolved,3.75,0,4,"[""EVT-2024-089041""]","Concur won't accept my gas station receipt photo. Says image quality too low but I think it looks fine. The receipt was a bit faded but you can still read it. Is there a manual way to enter this?","Automatic OCR failed on faded receipt. Walked associate through manual expense entry option in Concur. For faded receipts, recommended using phone's built-in document scanning feature (Notes app on iPhone, Google Drive scan on Android) which auto-enhances contrast. Added receipt image manually to expense entry. Submitted successfully.","[11:45] Associate: Gas receipt photo rejected. OCR says quality too low.
+[12:00] Agent: Faded receipts can be tricky. Let's try two things.
+[12:05] Agent: First, try rescanning with your phone's document scanner (Notes app on iPhone). It enhances contrast.
+[12:30] Associate: Same image looks way better with the scanner. But Concur still rejected it.
+[12:45] Agent: In that case, let's do manual entry. I'll walk you through it.
+[15:20] Associate: Submitted! Thanks for showing me the document scanner trick.
+[15:30] Agent: Happy to help!"
+TKT-2024-45016,2024-01-10 10:30:00,2024-01-10 14:45:00,A-56345,Access,Password,P2,Resolved,4.25,0,4,"[""EVT-2024-089032""]","Came back from vacation to find my account is locked. I forgot my password changed right before I left and I kept trying the old one. Now I'm locked out. I have a bunch of meetings this afternoon!","Account locked after 5 failed attempts. Verified identity through manager confirmation and security questions. Unlocked account and initiated password reset. Discussed password manager options to prevent future issues. Associate set up company-approved password manager.","[10:30] Associate: Account locked. Forgot new password after vacation. Meetings today!
+[10:40] Agent: No problem, I can help. First I need to verify your identity.
+[10:50] Agent: I'm reaching out to your manager for confirmation.
+[11:15] Agent: Verified. Sending password reset link to your personal email on file.
+[11:30] Associate: Reset done. I'm in!
+[14:30] Associate: Can you help me set up a password manager so this doesn't happen again?
+[14:45] Agent: Absolutely! Here's how to set up the company-approved manager."
+TKT-2024-45017,2024-01-09 10:30:00,2024-01-09 13:00:00,A-12789,Hardware,Laptop,P2,Resolved,2.5,0,3,"[""EVT-2024-089045""]","My laptop overheated and Teams crashed during a long video meeting. The fan was going crazy and the bottom was burning hot. This happens almost every day now when I have back-to-back video calls. Is something wrong with my laptop?","Reviewed device diagnostics. Laptop 4 years old with accumulated dust in vents. Recommended immediate actions: elevate laptop for airflow, close unnecessary apps, use external webcam (less CPU load than built-in). Long-term: submitted hardware refresh request citing thermal issues and age. Also offered compressed air for vent cleaning.","[10:30] Associate: Laptop overheating, Teams crashed. Happens daily with video calls.
+[10:45] Agent: Your laptop is 4 years old and may have dust buildup. Some quick tips...
+[10:50] Agent: 1) Use a laptop stand for airflow 2) Close Chrome tabs during calls 3) Consider external webcam.
+[11:00] Associate: I'll try these. But should I get a new laptop?
+[11:15] Agent: At 4 years, you're due for a refresh. I'll submit the request for you.
+[12:55] Associate: Laptop stand helped today. Thanks! Hope the new laptop comes soon.
+[13:00] Agent: Request submitted. Should hear back within a week."
+TKT-2024-45018,2024-01-12 15:50:00,2024-01-15 09:30:00,A-78456,Software,Outlook,P3,Resolved,65.7,0,4,"[""EVT-2024-089022""]","My calendar is showing duplicate meetings everywhere after the Outlook update. Same meeting shows up 2-3 times. I can't tell what's real anymore. Some of them have slightly different times which is super confusing.","Calendar sync conflict between Outlook desktop and mobile after update. Duplicate recurring meeting instances created. Exported calendar, cleared local calendar cache, re-synced from Exchange. Duplicates resolved. Advised associate to avoid editing recurring meetings from mobile until next update addresses the bug.","[15:50 Friday] Associate: Duplicate meetings everywhere. Same meeting 2-3 times.
+[16:10] Agent: This appears to be a sync issue from the recent update. I'll need to rebuild your calendar.
+[16:20] Agent: First, I'll export your calendar as backup, then clear the local cache.
+[16:30] Associate: Will I lose any meetings?
+[16:35] Agent: No - the source of truth is Exchange. We're just fixing the local copy.
+[Monday 09:00] Agent: Cache cleared and re-synced. Please check your calendar.
+[09:25] Associate: Looks clean! Thank you!
+[09:30] Agent: Avoid editing recurring meetings from mobile for now. Bug fix coming soon."
+TKT-2024-45019,2024-01-15 10:50:00,2024-01-15 15:00:00,A-56123,Software,Workday,P2,Resolved,4.2,0,3,"[""EVT-2024-089016""]","I'm a manager trying to approve my team's expense reports but the system keeps timing out. I have 8 reports pending and month-end deadline is today. Can these be escalated or is there a way to approve them faster?","Manager batch approval affected by same incident impacting expense submissions. Advised to approve one at a time rather than batch. All 8 approvals completed by 14:30. Noted that batch approval feature more susceptible to timeout during high load. Suggestion logged for product improvement.","[10:50] Associate: Expense approval timing out. 8 reports pending. Month-end deadline!
+[11:00] Agent: We're experiencing high load on expense system today.
+[11:05] Agent: Can you try approving one at a time instead of batch?
+[11:15] Associate: That's tedious but I'll try.
+[14:35] Associate: Finally got all 8 done. Took forever.
+[15:00] Agent: I apologize for the inconvenience. I've logged feedback about batch approval performance."
+TKT-2024-45020,2024-01-07 10:40:00,2024-01-07 12:00:00,A-23345,Software,SharePoint,P3,Resolved,1.3,0,5,"[""EVT-2024-089050""]","Trying to upload a 200MB video to our team SharePoint. Keep getting timeout errors. Is there a size limit? We need to share this training video with the team.","200MB file exceeds practical upload limit during business hours. Recommended alternatives: 1) Stream for video hosting (preferred for training content), 2) OneDrive link sharing, 3) Off-peak upload. Associate chose Stream, created channel, uploaded successfully. Better solution for video content anyway.","[10:40] Associate: 200MB video won't upload to SharePoint. Timeout errors.
+[10:50] Agent: That's quite large for SharePoint. Have you considered using Stream for video?
+[10:55] Associate: What's Stream?
+[11:00] Agent: Microsoft Stream is designed for video hosting. Better playback, analytics, auto-captions.
+[11:30] Agent: I'll help you set up a team channel and upload there.
+[11:55] Associate: This is way better! Didn't know we had this.
+[12:00] Agent: Glad it worked out! Stream is great for training content."
