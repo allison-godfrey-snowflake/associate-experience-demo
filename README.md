@@ -1,7 +1,7 @@
 # Associate Experience Platform Demo
 ## Snowflake Intelligence for Capital One
 
-This demo showcases Snowflake Intelligence capabilities for the **Associate Experience Team** at Capital One, demonstrating how to combine structured analytics with semantic search over unstructured data to improve the digital experience for associates.
+This demo showcases Snowflake Intelligence capabilities for the **Associate Experience Team** at a large bank, demonstrating how to combine structured analytics with semantic search over unstructured data to improve the digital experience for associates.
 
 ---
 
